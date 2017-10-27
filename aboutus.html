@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>关于我们</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/caseshow.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="css/index.css"/>-->
+	</head>
+	<body>
+		<!--顶部-->
+		<div class="top trans3 clearfix">
+			<div class="logo fl">
+				<a href="index.html"><img src="img/1443092664453.png" /></a>
+			</div>
+			<div class="navbar fl">
+				<ul class="clearfix">
+					<li style="margin-left: 60px;">
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="caseshow.html" >案例展示</a>
+					</li>
+					<li>
+						<a href="business.html">业务流程</a>
+					</li>
+					<li class="top-about">
+						<a style="color: #E90500;">关于</a>
+						<dl>
+							<dd class="trans3">
+								<a href="aboutus.html">关于我们</a>
+								<span class="fr">
+									>
+								</span>
+							</dd>
+							<dd class="trans3">
+								<a href="team.html">团队</a>
+
+								<span class="fr">
+									>
+								</span>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<a href="news.html">新闻</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--顶部banner图-->
+		<div class="banner4">
+			
+		</div>
+		<div class="about-us " style="text-align: center;">
+			<div class="ab-overflow">
+
+				<div class="ab-title trans5">
+					<p class="bt-title">关于我们</p>
+					<p class="bt-adv">About Us</p>
+
+				</div>
+				<div class="ab-intro clearfix">
+					<img class="fl" style="margin-left: 100px;" src="img/1448564760533.jpg"/ data-scroll-reveal="enter from the left after 0.5s">
+					<div class="ab-txt fr" >
+						<br />
+						<p data-scroll-reveal="enter from the right after 0.3s">专为热爱界面设计的你而倾力打造。这里拥有最无敌的创意、最精美的视觉、最具国际化的意识和前瞻性思维！也许在不知不觉中，它将成为你设计路上的一位好伙伴，在你最需要灵感的时候给予你帮助，鼓励你不断向前。当然，我们也需要最热心的你为我们平台注入源源不断的新鲜血液。 ,我们都有相应解决的方法。我们的优势在于我们重视于每一份业务的设计质量，而不在意业务的数量多少，提升客户网站形象是我们致力追求的业务目标。</p>
+						<br />
+						<p data-scroll-reveal="enter from the right after 0.5s">专为热爱界面设计的你而倾力打造。这里拥有最无敌的创意、最精美的视觉、最具国际化的意识和前瞻性思维！也许在不知不觉中，它将成为你设计路上的一位好伙伴，在你最需要灵感的时候给予你帮助，鼓励你不断向前。当然，我们也需要最热心的你为我们平台注入源源不断的新鲜血液。 ,我们都有相应解决的方法优势在于我们重视于每一份业务的设计质量，而不在意业务的数量多少，提升客户网站形象是我们致力追求的业务目标。</p>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		<!--最底部-->
+		<div class="footer clearfix trans2">
+			
+			<div class="fr" style="margin-right: 20px;">COPYRIGHT (©) 2017 mo004_1410 - 摄影类网站.</div>
+		</div>
+		<!--侧边栏-->
+		<a href="#">
+				<div class="backtop fr">
+					∧
+				</div>
+			</a>
+		<a href="#">
+			<div class="fixed-phone">
+				<i class="iconfont">&#xe61b;</i>
+			</div>
+		</a>
+		<a href="#">
+			<div class="fixed-weibo">
+				<i class="iconfont">&#xe637;</i>
+			</div>
+		</a>
+		<a href="#">
+			<div class="fixed-share">
+				<i class="iconfont">&#xe60a;</i>
+			</div>
+		</a>
+		<a href="#">
+			<div class="fixed-wechat">
+				<i class="iconfont">&#xe63a;</i>
+			</div>
+		</a>
+	</body>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/caseshow.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/scrollReveal.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		(function() {
+			window.scrollReveal = new scrollReveal({
+				reset: true,
+				move: '200px'
+			});
+		})();
+	</script>
+	<script type="text/javascript">
+		function move(div, cssname) {
+			var b, c, d;
+			d = $(div).offset().top;
+			b = $(window).scrollTop();
+			c = $(window).height();
+			//			console.log(c)
+			//			console.log((d - b))
+			if(d - b + 0.1 * c - c < 0) {
+				$((div)).addClass((cssname));
+			}
+		}
+	</script>
+</html>

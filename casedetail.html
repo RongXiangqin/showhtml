@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>关于我们</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/caseshow.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/casedetail.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/index.css"/>-->
+		<style type="text/css">
+			.top {
+				background: rgba(0, 0, 0, 0.8);
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--顶部-->
+		<div class="top trans3 clearfix">
+			<div class="logo fl">
+				<a href="index.html"><img src="img/1443092664453.png" /></a>
+			</div>
+			<div class="navbar fl">
+				<ul class="clearfix">
+					<li style="margin-left: 60px;">
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="caseshow.html" style="color: #E90500;">案例展示</a>
+					</li>
+					<li>
+						<a href="business.html">业务流程</a>
+					</li>
+					<li class="top-about">
+						<a>关于</a>
+						<dl>
+							<dd class="trans3">
+								<a href="aboutus.html">关于我们</a>
+								<span class="fr">
+									>
+								</span>
+							</dd>
+							<dd class="trans3">
+								<a href="team.html">团队</a>
+
+								<span class="fr">
+									>
+								</span>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<a href="news.html">新闻</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--详情页-->
+		<div class="casedetail clearfix">
+			<div class="container">
+
+				<div class="case-img fl" data-scroll-reveal="enter from the left after 0.5s">
+					<img src="img/1450282162123.jpg" />
+				</div>
+				<div class="case-box fr">
+					<p class="case-name" data-scroll-reveal="enter from the right after 0.5s">出国摄影采风</p>
+					<p class="case-sign" data-scroll-reveal="enter from the right after 0.6s">风光摄影</p>
+					<p class="case-intro" data-scroll-reveal="enter from the right after 0.7s">打破传统网站模式，让所有企业能够在最短时间内拥有一套高端网站，让WEB成为一种潮流！</p>
+					<a href="">
+						<p class="case-det" data-scroll-reveal="enter from the right after 0.8s">查看详情</p>
+					</a>
+				</div>
+				<div class="fl" style="margin-top: 20px;" data-scroll-reveal="enter from the bottom after 0.5s">
+					<img src="img/1450282162884.jpg"/>
+				</div>
+				<div class="fl" style="margin-top: 20px;" data-scroll-reveal="enter from the bottom after 0.5s">
+					<img src="img/1450282163571.jpg"/>
+				</div>
+			</div>
+		</div>
+		<!--最底部-->
+		<div class="footer clearfix trans2">
+
+			<div class="fr" style="margin-right: 20px;">COPYRIGHT (©) 2017 mo004_1410 - 摄影类网站.</div>
+		</div>
+		<!--侧边栏-->
+		<a href="#">
+			<div class="backtop fr">
+				∧
+			</div>
+		</a>
+		<a href="#">
+			<div class="fixed-phone">
+				<i class="iconfont">&#xe61b;</i>
+			</div>
+		</a>
+		<a href="#">
+			<div class="fixed-weibo">
+				<i class="iconfont">&#xe637;</i>
+			</div>
+		</a>
+		<a href="#">
+			<div class="fixed-share">
+				<i class="iconfont">&#xe60a;</i>
+			</div>
+		</a>
+		<a href="#">
+			<div class="fixed-wechat">
+				<i class="iconfont">&#xe63a;</i>
+			</div>
+		</a>
+	</body>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/caseshow.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/scrollReveal.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		(function() {
+			window.scrollReveal = new scrollReveal({
+				reset: true,
+				move: '50px'
+			});
+		})();
+	</script>
+	<script type="text/javascript">
+		function move(div, cssname) {
+			var b, c, d;
+			d = $(div).offset().top;
+			b = $(window).scrollTop();
+			c = $(window).height();
+			//			console.log(c)
+			//			console.log((d - b))
+			if(d - b + 0.1 * c - c < 0) {
+				$((div)).addClass((cssname));
+			}
+		}
+	</script>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html,
+body {
+	/*position: relative;*/
+	height: 100%;
+}
+
+.module {
+	z-index: 2;
+	background-color: #fff;
+	position: relative;
+}
+
+.banner {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+.fullslider {
+	height: 100%;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-wrapper {}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.pic-slider {
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.slider-description {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 7%;
+	text-align: left;
+}
+
+.description-title {
+	font-size: 18px;
+	line-height: 38px;
+	height: 38px;
+	transition-delay: 0s;
+	color: rgba(255, 255, 255, .6);
+}
+
+.slider-description .description-subtitle {
+	font-size: 28px;
+	height: 42px;
+	color: #ddd;
+	line-height: 42px;
+}
+
+#slider1 .swiper-button-next {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #FFFFFF;
+	font-size: 20px;
+	background-color: rgba(70, 70, 70, .6);
+	position: absolute;
+	top: 100%;
+	right: 10px;
+	margin-top: -60px;
+	background-image: url();
+}
+
+.fullslider #slider1 .swiper-button-prev {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #FFFFFF;
+	font-size: 20px;
+	background-color: rgba(70, 70, 70, .6);
+	position: absolute;
+	top: 100%;
+	left: 91.2%;
+	right: 70px;
+	margin-top: -60px;
+	background-image: url();
+}
+#slider1 .swiper-pagination{
+	/*background-color: #007AFF;*/
+	height: 100%;
+	width: 30px;
+	left: 93%;
+	top:50%
+}
+#slider1 .swiper-pagination li{
+	background-color:#EF4136;;
+	width: 10px;
+	height: 10px;
+	margin: 15px;
+	display: block;
+	/*position: relative;*/
+	/*margin-top: -50%;*/
+}
+#slider1 .swiper-pagination{
+}
+#slider1 .swiper-button-next:hover {
+	background-color: #EF4136;
+}
+
+#slider1 .swiper-button-prev:hover {
+	background-color: #EF4136;
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		-ms-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none
+	}
+}
+
+.ani {
+	opacity: 0;
+}
+
+.ani-slide .ani1-1 {
+	opacity: 1;
+	-webkit-animation: fadeInDown 0.5s both;
+	animation: fadeInDown 0.5s both;
+}
+
+.ani-slide .ani1-2 {
+	opacity: 1;
+	-webkit-animation: fadeInDown 1s 0.5s both;
+	animation: fadeInDown 1s 0.5s both;
+}
+
+		</style>
+	</head>
+	<body>
+		<!--轮播图-->
+		<div class="banner">
+			<div class="fullslider" id="topslider">
+				<div class="swiper-container relative" id="slider1">
+					<div class="swiper-wrapper">
+						<!--第一个-->
+						<div class="swiper-slide relative slider1">
+							<a href="">
+								<div class="pic-slider relative" style="background-image: url(img/1443091868239.jpg);">
+									<div class="slider-description">
+										<p class="description-title ani ani1-1">精心造就精致品牌全案</p>
+										<p class="description-subtitle ani ani1-2">品牌策略高度设计范围广度 持续服务深度</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide relative slider2">
+							<a href="">
+								<div class="pic-slider" style="background-image: url(img/1443091913793.jpg);">
+									<div class="slider-description">
+										<p class="description-title ani ani1-1">精心造就精致品牌全案</p>
+										<p class="description-subtitle ani ani1-2">品牌策略高度设计范围广度 持续服务深度</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next">></div>
+					<div class="swiper-button-prev">
+						<</div>
+					</div>
+				</div>
+			</div>
+		<!--<div class="banner" id="b04">
+			<ul>
+				<li style="position: relative;"><img src="img/1443091828358.jpg">
+					<div class="banner1-box" data-scroll-reveal="enter from the bottom after 0.5s">
+						<p class="banner1-p1 trans5">Best Website Template</p>
+						<p class="banner1-p2 trans5">你还在为没有网站而苦恼吗？高端企业模板随你选</p>
+					</div>
+				</li>
+				<li><img src="img/1443091868239.jpg">
+					<div class="banner1-box">
+						<p class="banner1-p1 trans5">Completely Customi</p>
+						<p class="banner1-p2 trans5">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies</p>
+					</div>
+				</li>
+				<li><img src="img/1443091913793.jpg">
+					<div class="banner1-box">
+						<p class="banner1-p1 trans5">Build Your Brand Now</p>
+						<p class="banner1-p2 trans5">WEBSITE推出企业版高端模板，针对中小企业的模板制造专家</p>
+					</div>
+				</li>
+			</ul>
+			<a href="javascript:void(0);" class="unslider-arrow04 prev"><img class="arrow" id="al1" src="img/arrowl.png" alt="prev" width="20" height="35"></a>
+			<a href="javascript:void(0);" class="unslider-arrow04 next"><img class="arrow" id="ar1" src="img/arrowr.png" alt="next" width="20" height="37"></a>
+		</div>-->
+	</body>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var swiper1 = new Swiper('#slider1', {
+				pagination: '.swiper-pagination',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				paginationClickable: true,
+				centeredSlides: true,
+				autoplay: 4000,
+				autoplayDisableOnInteraction: false,
+				loop: true,
+				speed: 800,
+				paginationElement: 'li',
+				onInit: function() {
+					$('.slider1').addClass('ani-slide');
+				},
+				onSlideChangeEnd: function(swiper) {
+					$('.ani-slide').removeClass('ani-slide');
+					$('.swiper-slide').eq(swiper.activeIndex).addClass('ani-slide');
+				}
+			});
+			$("#slider1").mouseenter(function () {
+				swiper1.stopAutoplay();
+			}).mouseleave(function () {
+				swiper1.startAutoplay();
+			});
+	</script>
+</html>

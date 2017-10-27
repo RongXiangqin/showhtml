@@ -1,0 +1,47 @@
+ @charset "utf-8";
+ .container {
+ 	width: 1180px;
+ 	margin: 0 auto;
+ }
+ 
+ .casedetail img {
+ 	width: 800px;
+ 	height: 534px;
+ }
+ .casedetail{
+ 	margin-top: 50px;
+ }
+ .case-box {
+ 	height: 262px;
+ 	width: 340px;
+ }
+ 
+ .case-name {
+ 	color: #444;
+ 	font-size: 26px;
+ }
+ 
+ .case-sign {
+ 	color: #c1c1c1;
+ 	font-size: 12px;
+ 	line-height: 30px;
+ }
+ 
+ .case-intro {
+ 	margin-top: 30px;
+ 	color: #6a6a6a;
+ 	font-size: 13px;
+ 	line-height: 24px;
+ }
+ .case-det{
+ 	height: 40px;
+ 	width: 132px;
+ 	line-height: 40px;
+ 	background-color: #E90500;
+ 	color: white;
+ 	text-align: center;
+ 	margin-top: 20px;
+ }
+.footer{
+	margin-top: 100px;
+}

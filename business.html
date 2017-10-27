@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>业务流程</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/caseshow.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="css/index.css"/>-->
+	</head>
+	<body>
+		<!--顶部-->
+		<div class="top trans3 clearfix">
+			<div class="logo fl">
+				<a href="index.html"><img src="img/1443092664453.png" /></a>
+			</div>
+			<div class="navbar fl">
+				<ul class="clearfix">
+					<li style="margin-left: 60px;">
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="caseshow.html" >案例展示</a>
+					</li>
+					<li>
+						<a href="business.html" style="color: #E90500;">业务流程</a>
+					</li>
+					<li class="top-about">
+						<a >关于</a>
+						<dl>
+							<dd class="trans3">
+								<a href="aboutus.html">关于我们</a>
+								<span class="fr">
+									>
+								</span>
+							</dd>
+							<dd class="trans3">
+								<a href="team.html">团队</a>
+
+								<span class="fr">
+									>
+								</span>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<a href="news.html">新闻</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--顶部banner图-->
+		<div class="banner3">
+			
+		</div>
+		<!--业务流程-->
+		<div class="business">
+			<div class="bu-overflow">
+
+				<div class="container">
+
+					<div class="bus-title ">
+						<p class="bt-title">业务流程</p>
+						<p class="bt-adv">Our advantage</p>
+					</div>
+					<div class="bus-content clearfix">
+						<a href="casedetail.html">
+						<div class="bc-box trans2 fl" data-scroll-reveal="enter from the left after 0.5s">
+							<ul>
+								<li>
+									<div class="bc-overflow">
+										<img class="trans5" src="img/1443092060835.jpg" />
+									</div>
+								</li>
+								<li class="bc-animal">动物摄影</li>
+								<li class="bc-intro">我们用10年的建站经验，打造出适合中小企业的高端企业模板，精致的设计，人性化的后台...</li>
+							</ul>
+						</div>
+						</a>
+						<a href="casedetail.html">
+						<div class="bc-box trans3 fl" data-scroll-reveal="enter from the bottom after 0.5s">
+							<ul>
+								<li>
+									<div class="bc-overflow">
+										<img class="trans5" src="img/1443092092709.jpg" />
+									</div>
+								</li>
+								<li class="bc-animal">儿童摄影</li>
+								<li class="bc-intro">有人说过的一句精辟的语言：摄影家的能力是把日常生活中稍纵即逝的平凡事物转化为不朽的视觉图像。</li>
+							</ul>
+						</div>
+						</a>
+						<a href="casedetail.html">
+						<div class="bc-box trans5 fl" id="ac" data-scroll-reveal="enter from the right after 0.5s">
+							<ul>
+								<li>
+									<div class="bc-overflow">
+										<img class="trans5" src="img/1443091982677.jpg" />
+									</div>
+								</li>
+								<li class="bc-animal">写真摄影</li>
+								<li class="bc-intro">自国母彭丽媛使用努比亚拍照的图片被媒体曝光但也有部分网友对其质疑</li>
+							</ul>
+						</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--最底部-->
+		<div class="footer clearfix trans2">
+			
+			<div class="fr" style="margin-right: 20px;">COPYRIGHT (©) 2017 mo004_1410 - 摄影类网站.</div>
+		</div>
+		<!--侧边栏-->
+		<a href="#">
+				<div class="backtop fr">
+					∧
+				</div>
+			</a>
+		<a href="#">
+			<div class="fixed-phone">
+				<i class="iconfont">&#xe61b;</i>
+			</div>
+		</a>
+		<a href="#">
+			<div class="fixed-weibo">
+				<i class="iconfont">&#xe637;</i>
+			</div>
+		</a>
+		<a href="#">
+			<div class="fixed-share">
+				<i class="iconfont">&#xe60a;</i>
+			</div>
+		</a>
+		<a href="#">
+			<div class="fixed-wechat">
+				<i class="iconfont">&#xe63a;</i>
+			</div>
+		</a>
+	</body>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/caseshow.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/scrollReveal.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		(function() {
+			window.scrollReveal = new scrollReveal({
+				reset: true,
+				move: '50px'
+			});
+		})();
+	</script>
+	<script type="text/javascript">
+		function move(div, cssname) {
+			var b, c, d;
+			d = $(div).offset().top;
+			b = $(window).scrollTop();
+			c = $(window).height();
+			//			console.log(c)
+			//			console.log((d - b))
+			if(d - b + 0.1 * c - c < 0) {
+				$((div)).addClass((cssname));
+			}
+		}
+	</script>
+</html>
+
